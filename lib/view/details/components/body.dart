@@ -1,11 +1,11 @@
 import 'package:e_commerce_ui/constant/constant.dart';
 import 'package:e_commerce_ui/model/product.dart';
+import 'package:e_commerce_ui/view/details/components/add_to_cart.dart';
 import 'package:e_commerce_ui/view/details/components/color_and_size.dart';
-import 'package:e_commerce_ui/view/details/components/counter_with_loke_button.dart';
+import 'package:e_commerce_ui/view/details/components/counter_with_like_button.dart';
 import 'package:e_commerce_ui/view/details/components/description.dart';
 import 'package:e_commerce_ui/view/details/components/product_title_wiith_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class DetailsBody extends StatelessWidget {
   final Product? product;
@@ -39,37 +39,11 @@ class DetailsBody extends StatelessWidget {
                   child: Column(
                     children: [
                       ColorAndSize(product: product),
+                      SizedBox(height: defaultPadding / 2),
                       Description(product: product),
+                      SizedBox(height: defaultPadding / 2),
                       CounterWithLikeButton(),
-                      Row(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 58,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(18),
-                              border: Border.all(
-                                color: (product!.color!),
-                              ),
-                            ),
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: SvgPicture.asset(
-                                "assets/icons/add_to_cart.svg",
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              child: Text(
-                                "Buy Now",
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                      AddToCart(product: product),
                     ],
                   ),
                 ),
