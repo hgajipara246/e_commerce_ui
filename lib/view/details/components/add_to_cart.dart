@@ -14,11 +14,11 @@ class AddToCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 70),
+      padding: const EdgeInsets.only(top: 70),
       child: Row(
         children: [
           Container(
-            margin: EdgeInsets.only(right: defaultPadding),
+            margin: const EdgeInsets.only(right: defaultPadding),
             height: 50,
             width: 58,
             decoration: BoxDecoration(
@@ -50,7 +50,7 @@ class AddToCart extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   "Buy Now".toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

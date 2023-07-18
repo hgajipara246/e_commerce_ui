@@ -24,7 +24,7 @@ class _CartCounterState extends State<CartCounter> {
           },
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+          padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
           child: Text(
             "${numOfItems.toString().padLeft(2, "0")}",
             style: Theme.of(context).textTheme.headline6!,
@@ -51,7 +51,7 @@ class _CartCounterState extends State<CartCounter> {
       width: 40,
       child: OutlinedButton(
         style: ButtonStyle(
-          padding: MaterialStatePropertyAll(EdgeInsets.zero),
+          padding: const MaterialStatePropertyAll(EdgeInsets.zero),
           shape: MaterialStatePropertyAll(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(13),

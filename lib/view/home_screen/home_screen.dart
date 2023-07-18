@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:e_commerce_ui/constant/constant.dart';
 import 'package:e_commerce_ui/view/home_screen/components/body.dart';
 import 'package:flutter/material.dart';

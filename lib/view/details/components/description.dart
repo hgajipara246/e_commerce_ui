@@ -13,8 +13,8 @@ class Description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: defaultPadding),
-      child: Text("${product!.description}", style: TextStyle(height: 1.5)),
+      padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+      child: Text("${product!.description}", style: const TextStyle(height: 1.5)),
     );
   }
 }

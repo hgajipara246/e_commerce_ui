@@ -13,11 +13,11 @@ class ProductTitleWithImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: defaultPadding),
+      padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Aristocratic Hand Bag",
             style: TextStyle(color: Colors.white),
           ),
@@ -28,13 +28,13 @@ class ProductTitleWithImage extends StatelessWidget {
                   color: Colors.white,
                 ),
           ),
-          SizedBox(height: defaultPadding),
+          const SizedBox(height: defaultPadding),
           Row(
             children: [
               RichText(
                 text: TextSpan(
                   children: [
-                    TextSpan(
+                    const TextSpan(
                       text: "Price\n",
                     ),
                     TextSpan(
@@ -47,7 +47,7 @@ class ProductTitleWithImage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(width: defaultPadding),
+              const SizedBox(width: defaultPadding),
               Expanded(
                 child: Image.asset(
                   "${product!.image}",

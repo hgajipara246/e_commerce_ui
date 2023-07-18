@@ -20,7 +20,7 @@ class ItemCart extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(defaultPadding),
+              padding: const EdgeInsets.all(defaultPadding),
               decoration: BoxDecoration(
                 color: product!.color,
                 borderRadius: BorderRadius.circular(16),
@@ -28,12 +28,12 @@ class ItemCart extends StatelessWidget {
               child: Image.asset(product!.image as String),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: defaultPadding / 4),
+            padding: const EdgeInsets.symmetric(vertical: defaultPadding / 4),
             child: Text(
               product!.title as String,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 17,
                 color: textLightGrey,
               ),
@@ -41,7 +41,7 @@ class ItemCart extends StatelessWidget {
           ),
           Text(
             "\$${product!.price}",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontWeight: FontWeight.bold),
           ),
         ],
       ),

@@ -15,7 +15,7 @@ class DetailsBody extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       child: Column(
         children: [
           SizedBox(
@@ -29,7 +29,7 @@ class DetailsBody extends StatelessWidget {
                     left: defaultPadding,
                     right: defaultPadding,
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
@@ -39,10 +39,10 @@ class DetailsBody extends StatelessWidget {
                   child: Column(
                     children: [
                       ColorAndSize(product: product),
-                      SizedBox(height: defaultPadding / 2),
+                      const SizedBox(height: defaultPadding / 2),
                       Description(product: product),
-                      SizedBox(height: defaultPadding / 2),
-                      CounterWithLikeButton(),
+                      const SizedBox(height: defaultPadding / 2),
+                      const CounterWithLikeButton(),
                       AddToCart(product: product),
                     ],
                   ),
