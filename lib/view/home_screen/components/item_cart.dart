@@ -28,11 +28,13 @@ class ItemCart extends StatelessWidget {
               child: Image.asset(product!.image as String),
             ),
           ),
+          SizedBox(height: 5),
           Padding(
             padding: EdgeInsets.symmetric(vertical: defaultPadding / 4),
             child: Text(
               product!.title as String,
               style: TextStyle(
+                fontSize: 17,
                 color: textLightGrey,
               ),
             ),
